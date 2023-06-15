@@ -61,7 +61,7 @@ module.exports.generatePDF = async (event) => {
     const doc = new PDFDocument();
     doc.font("Helvetica-Bold");
     doc.moveDown();
-    doc.text("Lite Thinking - Inventario", { align: "center" });
+    doc.text("RevStar - Inventario", { align: "center" });
     doc.text("Descargado por: ", { align: "left" });
     doc.font("Helvetica");
     doc.text(decoded.email, { align: "left" });
